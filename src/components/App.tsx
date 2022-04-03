@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { HomePage } from "src/components/home";
+import { HomePage } from 'src/components/home'
 
-declare const global: { HermesInternal: null | {} };
+declare const global: { HermesInternal: null | {} }
 
 const App = () => {
   return (
@@ -14,7 +14,7 @@ const App = () => {
         </Routes>
       </Router>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
