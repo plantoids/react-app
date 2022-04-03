@@ -1,3 +1,13 @@
+# Plantoids
+
+## Notes
+
+- I had to set `"react-scripts": "4.0.3"` in the package.json depdenencies to avoid the following error:
+
+```
+Can't resolve 'stream' in 'C:\Users\Dennis\github\plantoids-react-app\node_modules\cipher-base
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,11 +1,11 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react'
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { store } from "src/redux";
-import { HomePage } from "src/components/home";
+import { store } from 'src/redux'
+import { HomePage } from 'src/components/home'
 
-declare const global: { HermesInternal: null | {} };
+declare const global: { HermesInternal: null | {} }
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
         </Router>
       </Provider>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
