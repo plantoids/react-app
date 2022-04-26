@@ -4,8 +4,6 @@ import {
   WalletMultiButton,
 } from '@solana/wallet-adapter-react-ui'
 
-import CandyMachine from 'src/components/candymachine/App'
-
 export const HomePage = () => {
   return (
     <div>
@@ -14,7 +12,6 @@ export const HomePage = () => {
       <WalletMultiButton />
       <WalletDisconnectButton />
       <hr />
-      <CandyMachine />
     </div>
   )
 }

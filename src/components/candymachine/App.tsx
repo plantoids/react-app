@@ -1,4 +1,3 @@
-import './App.css'
 import Home from './Home'
 import * as anchor from '@project-serum/anchor'
 
@@ -23,7 +22,7 @@ const connection = new anchor.web3.Connection(
 
 const txTimeoutInMilliseconds = 30000
 
-const App = (props: any) => {
+const App = () => {
   return (
     <Home
       candyMachineId={candyMachineId}

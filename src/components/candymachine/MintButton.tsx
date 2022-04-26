@@ -8,7 +8,7 @@ import {
   onGatewayTokenChange,
   removeAccountChangeListener,
 } from '@identity.com/solana-gateway-ts'
-
+import { formatNumber } from 'src/components/candymachine/utils'
 export const MintButton = ({
   onMint,
   candyMachine,
@@ -34,14 +34,9 @@ export const MintButton = ({
       return 'SOLD OUT'
     } else if (isMinting) {
       return 'Minting...'
-    } else if (
-      candyMachine?.state.isPresale ||
-      candyMachine?.state.isWhitelistOnly
-    ) {
-      return 'WHITELIST MINT'
     }
 
-    return 'MINT'
+    return 'Mint a Plantoid'
   }
 
   useEffect(() => {
@@ -84,12 +79,15 @@ export const MintButton = ({
 
   return (
     <button
+      className="wallet-adapter-button"
       disabled={isMinting || !isActive}
       onClick={async () => {
-        if (candyMachine?.state.isActive && candyMachine?.state.gatekeeper) {
+        if (candyMachine?.state.gatekeeper) {
           const network =
             candyMachine.state.gatekeeper.gatekeeperNetwork.toBase58()
+          console.log('network', network)
           if (network === 'ignREusXmGrscGNUesoU9mxfds9AiYTezUKex2PsZV6') {
+            console.log('gatewayStatus', gatewayStatus)
             if (gatewayStatus === GatewayStatus.ACTIVE) {
               await onMint()
             } else {
@@ -141,7 +139,14 @@ export const MintButton = ({
         }
       }}
     >
-      {getMintButtonContent()}
+      <span>
+        <span>{getMintButtonContent()}</span>
+        {candyMachine && (
+          <span>{`◎ ${formatNumber.asNumber(
+            candyMachine.state.price
+          )} SOL`}</span>
+        )}
+      </span>
     </button>
   )
 }

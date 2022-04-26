@@ -13,7 +13,6 @@ import {
   getSolletWallet,
   getSolletExtensionWallet,
 } from '@solana/wallet-adapter-wallets'
-import '@solana/wallet-adapter-react-ui/styles.css'
 
 export interface ProviderProps {
   children: any
