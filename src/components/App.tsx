@@ -9,13 +9,29 @@ import WalletProvider from 'src/components/wallet/Provider'
 // eslint-disable-next-line
 declare const global: { HermesInternal: null | {} }
 
+const IndexPage = (
+  <div className="index-page-container">
+    <h1>Welcome to Plantoids Index!</h1>
+    <p>Feel free to peruse the following pages:</p>
+    <ul>
+      <li>
+        <a href="/me">/me</a> Home
+      </li>
+      <li>
+        <a href="/mint">/mint</a> Mint
+      </li>
+    </ul>
+  </div>
+)
+
 const App = () => {
   return (
     <div style={{ flexGrow: 1 }}>
       <WalletProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={IndexPage} />
+            <Route path="/me" element={<HomePage />} />
             <Route path="/mint" element={<MintPage />} />
           </Routes>
         </Router>
