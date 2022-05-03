@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="hero">
       <div className="wrapper">

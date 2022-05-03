@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Card = ({ header, tba, kg, age }) => {
+const Card = ({ header, tba, kg, age }) => {
   return (
     <>
       <div className="card">

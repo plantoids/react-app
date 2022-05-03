@@ -1,4 +1,5 @@
 import React from 'react'
+import About from './About'
 import Hero from './Hero'
 
 
@@ -9,7 +10,7 @@ export const HomePage = () => {
 
     <main className='home'>
       <Hero/>
-
+      <About/>
 
 
 
