@@ -22,23 +22,13 @@ const Hero = () => {
             <div className="hero__socials">
               <h4>Be the first one to know</h4>
               <div>
-                  <img src='./assets/twitter.svg' alt='' />
-                  <img src='./assets/Discord-Logo-Color.svg' alt='' />
+                <img src="./assets/twitter.svg" alt="" />
+                <img src="./assets/Discord-Logo-Color.svg" alt="" />
               </div>
             </div>
           </div>
           <div className="hero__card">
-            <Card
-            header
-            tba
-            kg="80"
-            age="3"
-           
-            />
-            {/* <Card
-            kg="50"
-            age="4"
-            /> */}
+            <Card tba kg="50" age="3" />
           </div>
         </div>
       </div>
