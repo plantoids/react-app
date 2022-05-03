@@ -1,0 +1,72 @@
+.home {
+  padding-top: 70px;
+}
+
+.hero {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      @extend %tittle-72;
+      display: flex;
+      align-items: center;
+      line-height: 1.2;
+
+      sub {
+        align-self: flex-end;
+      }
+      span {
+        margin: 0 20px;
+        background: rgba(103, 206, 103, 0.1);
+        width: 70px;
+        height: 50px;
+        display: flex;
+        border-radius: 32px;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 28px;
+          height: 32px;
+        }
+      }
+    }
+
+    p {
+      color: $dark-grey;
+      @extend %description-20-regular;
+      margin-top: 42px;
+      line-height: 1.2;
+    }
+  }
+
+  &__card {
+    width: 380px;
+    justify-self: flex-end;
+  }
+
+  &__socials {
+    margin-top: auto;
+
+    h4 {
+      @extend %description-20-regular;
+      color: $dark-grey;
+    }
+
+    div {
+      margin-top: 24px;
+    }
+
+    img {
+      width: 32px;
+      margin-right: 24px;
+      cursor: pointer;
+    }
+  }
+}

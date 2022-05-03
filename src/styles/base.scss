@@ -1,0 +1,46 @@
+
+$base-dark: #1B1C1D;
+$dark-grey: #605E5A;
+$base-green: #67CE67;
+$aux-orange: #EEB335;
+$base-grey: #F9F9F9;
+$white: #fff;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  background-color: $base-grey;
+  font-family: 'Circular Std', sans-serif;
+  color: $base-dark;
+  /* padding-left: 24px;
+  padding-right: 24px; */
+}
+
+/* @media only screen and (min-width: 1224px) {
+  body {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
+} */
+
+
+sub {
+  font-size: 70%;
+}
+
+.wrapper {
+	width: 1180px;
+    max-width: 95%;
+    margin: 0 auto;
+}

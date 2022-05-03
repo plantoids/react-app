@@ -1,17 +1,21 @@
 import React from 'react'
-import {
-  WalletDisconnectButton,
-  WalletMultiButton,
-} from '@solana/wallet-adapter-react-ui'
+import Hero from './Hero'
+
+
+
 
 export const HomePage = () => {
   return (
-    <div>
-      <p>I am the home page :D:D:D:D</p>
 
-      <WalletMultiButton />
-      <WalletDisconnectButton />
-      <hr />
-    </div>
+    <main className='home'>
+      <Hero/>
+
+
+
+
+      {/* <WalletMultiButton /> */}
+      {/* <WalletDisconnectButton /> */}
+   
+    </main>
   )
 }
