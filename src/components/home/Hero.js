@@ -28,7 +28,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero__card">
-            <Card tba kg="50" age="3" />
+            <Card kg="50" age="3">
+              <div className="tba">
+                <p>Mint TBA</p>
+              </div>
+            </Card>
           </div>
         </div>
       </div>

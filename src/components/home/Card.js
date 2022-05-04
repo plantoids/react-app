@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({ header, tba, kg, age }) => {
+const Card = ({ header, kg, age, children, activeImage }) => {
   return (
     <>
       <div className="card">
@@ -23,7 +23,10 @@ const Card = ({ header, tba, kg, age }) => {
             <p>UNREVEALED PLANTOID</p>
           </div>
           <figure>
-            <img src="./assets/blured-img.png" alt="" />
+            <img
+              src={activeImage ? activeImage : './assets/blured-img.png'}
+              alt=""
+            />
           </figure>
         </div>
       </div>
@@ -43,12 +46,7 @@ const Card = ({ header, tba, kg, age }) => {
           <p>Age</p>
         </div>
       </div>
-
-      {tba ? (
-        <div className="tba">
-          <p>Mint TBA</p>
-        </div>
-      ) : null}
+      {children}
     </>
   )
 }
