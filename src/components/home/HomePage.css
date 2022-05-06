@@ -1,0 +1,44 @@
+.home-page-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.home-page-container h1 {
+  font-size: 72px;
+  font-weight: 400;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.home-page-container header {
+  align-items: center;
+  align-self: stretch;
+  display: grid;
+  font-size: 18px;
+  grid-template-areas: 'x logo connect';
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 24px;
+}
+
+.home-page-container header span.logo {
+  display: inline-flex;
+  grid-area: logo;
+  justify-content: center;
+}
+
+.home-page-container header span.connect {
+  display: inline-flex;
+  grid-area: connect;
+  justify-content: flex-end;
+}
+
+.home-page-container header a {
+  color: inherit;
+  text-decoration: none;
+  padding-left: 24px;
+}
+
+.home-page-container header img {
+  height: 24px;
+}
