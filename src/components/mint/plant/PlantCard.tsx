@@ -1,6 +1,6 @@
 import React from 'react'
 
-import 'src/components/plant/PlantCard.css'
+import 'src/components/mint/plant/PlantCard.css'
 
 const IMAGE_URL = './assets/nft-placeholder.jpg'
 

@@ -8,7 +8,7 @@ import {
   onGatewayTokenChange,
   removeAccountChangeListener,
 } from '@identity.com/solana-gateway-ts'
-import { formatNumber } from 'src/components/candymachine/utils'
+import { formatNumber } from 'src/components/mint/candymachine/utils'
 export const MintButton = ({
   onMint,
   candyMachine,

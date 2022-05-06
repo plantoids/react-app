@@ -1,7 +1,7 @@
 import React from 'react'
 
-import CandyMachine from 'src/components/candymachine/App'
-import PlantCard from 'src/components/plant/PlantCard'
+import CandyMachine from 'src/components/mint/candymachine/App'
+import PlantCard from 'src/components/mint/plant/PlantCard'
 import 'src/components/mint/MintPage.css'
 
 const MintPage = () => {

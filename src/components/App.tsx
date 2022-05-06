@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import 'src/components/App.css'
-import { HomePage } from 'src/components/home'
+import HomePage from 'src/components/home/HomePage'
 import MintPage from 'src/components/mint/MintPage'
-import WalletProvider from 'src/components/wallet/Provider'
+import WalletProvider from 'src/provider/WalletProvider'
 
 // eslint-disable-next-line
 declare const global: { HermesInternal: null | {} }

@@ -12,10 +12,10 @@ import {
   CANDY_MACHINE_PROGRAM,
   getCandyMachineState,
   mintOneToken,
-} from 'src/components/candymachine/candy-machine'
-import { MintButton } from 'src/components/candymachine/MintButton'
-import { sendTransaction } from 'src/components/candymachine/connection'
-import 'src/components/candymachine/Home.css'
+} from 'src/components/mint/candymachine/candy-machine'
+import { MintButton } from 'src/components/mint/candymachine/MintButton'
+import { sendTransaction } from 'src/components/mint/candymachine/connection'
+import 'src/components/mint/candymachine/Home.css'
 
 export interface HomeProps {
   candyMachineId?: anchor.web3.PublicKey
