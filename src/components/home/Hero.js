@@ -22,8 +22,20 @@ const Hero = () => {
             <div className="hero__socials">
               <h4>Be the first one to know</h4>
               <div>
-                <img src="./assets/twitter.svg" alt="" />
-                <img src="./assets/Discord-Logo-Color.svg" alt="" />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/PlantoidsNFT"
+                >
+                  <img src="./assets/Twitter logo blue.svg" alt="twitter" />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://discord.gg/uMTaKMaszq"
+                >
+                  <img src="./assets/Discord-Logo-Color.svg" alt="discord" />
+                </a>
               </div>
             </div>
           </div>

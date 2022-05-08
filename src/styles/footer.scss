@@ -1,0 +1,33 @@
+.footer {
+  &__inner {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 46px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      &:last-child {
+   
+        display: flex;
+        align-items: center;
+
+        a {
+          @extend %description-18-book;
+          color: $white;
+          margin-right: 40px;
+        }
+
+        img {
+          width: 32px;
+          margin-right: 24px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
