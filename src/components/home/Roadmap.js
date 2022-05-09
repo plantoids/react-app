@@ -47,7 +47,7 @@ console.log(DATA)
 const Roadmap = () => {
   return (
     <div className="roadmap">
-      <div className="">
+      <div className="wrapper">
         <div className="roadmap__inner">
           <h2>Roadmap</h2>
 

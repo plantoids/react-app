@@ -18,6 +18,7 @@ export const HomePage = () => {
   const darkSectionRef = useRef()
 
   useEffect(() => {
+    
     // if (typeof window !== `undefined`) {
     //   gsap.registerPlugin(ScrollTrigger)
     //   gsap.core.globals('ScrollTrigger', ScrollTrigger)
