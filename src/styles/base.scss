@@ -41,6 +41,12 @@ sub {
 
 .wrapper {
 	width: 1180px;
-    max-width: 95%;
+    max-width: 90%;
     margin: 0 auto;
+}
+
+.hide-mob {
+  @media(max-width: 640px) {
+    display: none;
+  }
 }

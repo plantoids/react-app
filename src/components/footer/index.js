@@ -16,20 +16,22 @@ const Footer = () => {
             >
               Whitepaper
             </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://twitter.com/PlantoidsNFT"
-            >
-              <img src="./assets/Twitter logo blue.svg" alt="twitter" />
-            </a>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://discord.gg/uMTaKMaszq"
-            >
-              <img src="./assets/Discord-Logo-Color.svg" alt="discord" />
-            </a>
+            <span>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/PlantoidsNFT"
+              >
+                <img src="./assets/Twitter logo blue.svg" alt="twitter" />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://discord.gg/uMTaKMaszq"
+              >
+                <img src="./assets/Discord-Logo-Color.svg" alt="discord" />
+              </a>
+            </span>
           </div>
         </div>
       </div>

@@ -36,6 +36,13 @@ const About = () => {
     <section className="about">
       <div className="wrapper">
         <hr />
+        <div className="mobile-heading">
+          <h2>What is Plantoids NFT?</h2>
+          <p>
+            Your Plantoid is a dynamic NFT. Each Plantoid will have unique
+            traits and will grow with the passage of time.
+          </p>
+        </div>
         <div className="about__inner">
           <div className="about__card">
             <Card

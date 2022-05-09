@@ -119,6 +119,10 @@
       @extend %description-12;
       margin-top: 8px;
       color: $dark-grey;
+
+      @media (max-width: 980px) {
+        font-size: 11px;
+      }
     }
   }
 }

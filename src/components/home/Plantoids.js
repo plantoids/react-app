@@ -6,7 +6,7 @@ const Plantoids = () => {
       <div className="wrapper">
         <div className="plantoids__inner">
           <h2>About Plantoids</h2>
-          <p>
+          <p className='hide-mob'>
             Plantoids is a Solana-based platform to facilitate everyone remove
             the global CO2 emissions in exchange for dynamic NFTs in the shape
             of digital plants

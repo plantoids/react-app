@@ -25,7 +25,7 @@ export const HomePage = () => {
 
     ScrollTrigger.create({
       trigger: '.pin-section',
-      start: 'top top',
+      start: 'bottom bottom',
       endTrigger: darkSectionRef.current,
       pin: true,
       pinSpacing: false,

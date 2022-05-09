@@ -1,5 +1,6 @@
 .home {
   padding-top: 70px;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -7,11 +8,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 980px) {
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      align-items: flex-start;
+      text-align: left;
+    }
+
     h1 {
       @extend %tittle-72;
       display: flex;
@@ -31,6 +47,10 @@
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 980px) {
+          margin: 0 10px;
+        }
+
         img {
           width: 28px;
           height: 32px;
@@ -43,16 +63,34 @@
       @extend %description-20-regular;
       margin-top: 42px;
       line-height: 1.2;
+
+      
+    @media (max-width: 640px) {
+      margin-top: 24px;
+    }
     }
   }
 
   &__card {
     width: 380px;
     justify-self: flex-end;
+
+    @media (max-width: 980px) {
+      justify-self: center;
+      // width: 95%;
+    }
+
+    @media (max-width: 420px) {
+      width: 100%;
+    }
   }
 
   &__socials {
     margin-top: auto;
+
+    @media (max-width: 640px) {
+      display: none;
+    }
 
     h4 {
       @extend %description-20-regular;
@@ -77,26 +115,13 @@
   overflow-x: hidden;
   position: relative;
 
-  .card {
-    position: relative;
-    z-index: 10;
+  @media (max-width: 980px) {
+    padding-top: 130px;
   }
 
-  hr {
-    opacity: 0.3;
-  }
-
-  &__inner {
-    padding-top: 100px;
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-gap: 20px;
-  }
-
-  &__content {
-    width: 680px;
-    justify-self: flex-end;
-    overflow: visible;
+  .mobile-heading {
+    display: none;
+    text-align: center;
 
     h2 {
       @extend %tittle-56;
@@ -106,8 +131,77 @@
     p {
       @extend %description-20-regular;
       line-height: 1.3;
+      color: $dark-grey;
+    }
+
+    @media (max-width: 980px) {
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      text-align: left;
+    }
+  }
+
+  .card {
+    position: relative;
+    z-index: 10;
+  }
+
+  hr {
+    opacity: 0.3;
+    @media (max-width: 980px) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    grid-gap: 20px;
+
+    @media (max-width: 980px) {
+      padding-top: 24px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    width: 680px;
+    justify-self: flex-end;
+    overflow: visible;
+
+    @media (max-width: 1240px) {
+      width: 640px;
+    }
+
+    @media (max-width: 1180px) {
+      width: 540px;
+    }
+
+    @media (max-width: 980px) {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    h2 {
+      @extend %tittle-56;
+      margin-bottom: 24px;
+
+      @media (max-width: 980px) {
+        display: none;
+      }
+    }
+
+    p {
+      @extend %description-20-regular;
+      line-height: 1.3;
       width: 85%;
       color: $dark-grey;
+      @media (max-width: 980px) {
+        display: none;
+      }
     }
 
     .slide-card {
@@ -124,6 +218,9 @@
 
       p {
         @extend %description-16-book;
+        @media (max-width: 980px) {
+          display: block;
+        }
       }
     }
 
@@ -162,6 +259,10 @@
       align-items: center;
       margin-top: 24px;
 
+      @media (max-width: 980px) {
+        display: none;
+      }
+
       .arrow {
         margin-right: 20px;
         border-radius: 50%;
@@ -195,10 +296,25 @@
     margin-top: 125px;
     width: 131%;
     overflow: hidden;
+
+    @media (max-width: 1640px) {
+      width: 120%;
+    }
+    @media (max-width: 1490px) {
+      width: 100%;
+    }
+
+    @media (max-width: 980px) {
+      margin-top: 0px;
+      width: 100%;
+    }
   }
 
   &__card {
     width: 380px;
+    @media (max-width: 980px) {
+      width: 100%;
+    }
   }
 }
 
@@ -209,16 +325,32 @@
   z-index: 2;
   position: relative;
   margin-bottom: 30px;
+
+  @media (max-width: 980px) {
+    margin: 0 4px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+  }
 }
 
 .benefits {
   padding-top: 140px;
 
+  @media (max-width: 980px) {
+    padding-top: 30px;
+  }
+
   &__title {
     width: 65%;
     margin-bottom: 56px;
+
+    @media (max-width: 980px) {
+      width: 95%;
+      margin-bottom: 50px;
+    }
+
     h2 {
-      font-size: 56px;
+      @extend %tittle-56;
       color: $white;
       line-height: 1.2;
     }
@@ -227,6 +359,11 @@
       font-size: 13px;
       margin-bottom: 30px;
       letter-spacing: 2px;
+
+      @media (max-width: 980px) {
+        font-size: 11px;
+      }
+
     }
   }
 
@@ -236,12 +373,21 @@
         display: grid;
         grid-template-columns: 0.6fr 0.4fr;
         grid-gap: 20px;
+
+        @media (max-width: 980px) {
+          grid-template-columns: 1fr;
+          margin-bottom: 20px;
+        }
       }
 
       &:nth-child(2) {
         display: grid;
         grid-template-columns: 0.7fr 0.3fr;
         grid-gap: 20px;
+
+        @media (max-width: 980px) {
+          grid-template-columns: 1fr;
+        }
       }
     }
   }
@@ -251,6 +397,10 @@
   border-radius: 12px;
   padding: 32px;
   margin-bottom: 20px;
+
+  @media (max-width: 980px) {
+    margin-bottom: 0px;
+  }
 
   img {
     margin-bottom: 50px;
@@ -307,6 +457,7 @@
   position: relative;
   background: #a1c599;
   color: $white;
+  overflow: hidden;
 
   h5 {
     @extend %description-14-bold;
@@ -343,27 +494,91 @@
   margin-top: 200px;
   margin-bottom: 240px;
 
+  @media (max-width: 980px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__slider {
+    width: 100%;
+
+    @media (max-width: 980px) {
+      overflow: visible !important;
+    }
+
+  }
+
   &__inner {
     h2 {
       @extend %tittle-56;
       color: $white;
+      margin-left: 5%;
     }
   }
 
   &__cards {
     margin-top: 56px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    padding: 0 5%;
+
+    @media(max-width: 640px) {
+      padding: 0;
+    }
+
+
   }
 
   &__card {
     background: #131313;
     padding: 40px;
     border-radius: 16px;
+    min-height: 448px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 980px) {
+      padding: 30px 24px;
+    }
+
+
+
+
+    h1 {
+      color: $white;
+      font-size: 40px;
+      font-weight: 400;
+      @media (max-width: 980px) {
+        font-size: 32px;
+      }
+    }
 
     &__item {
       color: $white;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: transparent;
+          border-radius: 50%;
+          border: 2px solid $dark-grey;
+          margin-right: 10px;
+          flex: 0 0 20px;
+        }
+
+        p {
+          @extend %description-18-book;
+        }
+      }
     }
 
     &.past {
@@ -384,6 +599,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__column {
@@ -407,18 +626,27 @@
       padding: 0 20px;
       cursor: pointer;
 
+      @media (max-width: 980px) {
+        min-height: 74px;
+      }
+
       img {
         height: 18px;
       }
       h4 {
         @extend %description-20;
+
+        @media (max-width: 980px) {
+          width: 75%;
+          line-height: 1.2;
+        }
       }
     }
 
     &__content {
       max-height: 0;
       overflow: hidden;
-      transition: all .5s ease;
+      transition: all 0.2s ease-out;
       padding: 0 20px;
 
       p {
@@ -444,6 +672,10 @@
 .plantoids {
   margin-top: 215px;
 
+  @media (max-width: 980px) {
+    margin-top: 50px;
+  }
+
   &__red-bg {
     background: rgba(206, 103, 103, 0.1);
   }
@@ -464,6 +696,7 @@
       @extend %description-20;
       line-height: 1.3;
       opacity: 0.6;
+
     }
   }
 
@@ -472,6 +705,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
+
+    @media (max-width: 980px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {
@@ -541,4 +778,55 @@
       margin-right: 0;
     }
   }
+}
+
+.checked-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    margin-right: 10px;
+  }
+  p {
+    color: #67ce67;
+    text-decoration: line-through;
+  }
+}
+
+
+.swiper-slide:nth-child(1) {
+  .roadmap__card {
+    h1 {
+      opacity: .3;
+    }
+  }
+
+}
+
+.swiper-slide:nth-child(2) {
+  .roadmap__card {
+    &:after {
+      content: "We're here";
+      display: block;
+      font-family: inherit;
+      position: absolute;
+      right: 40px;
+      top: 54px;
+      color: $base-green;
+
+      @media (max-width: 1160px) {
+        right: auto;
+        left: 40px;
+        top: 90px;
+      }
+
+      @media (max-width: 980px) {
+        right: 40px;
+        top: 40px;
+        left: auto;
+      }
+    }
+  }
+
 }
