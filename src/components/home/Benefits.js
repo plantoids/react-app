@@ -43,7 +43,7 @@ const Benefits = () => {
               <div className="benefit-card light-green-bg ">
                   <h5>GUARANTEED</h5>
                   <h2>100x</h2>
-                  <p>More CO2 captured than an average house plant</p>
+                  <p>Most proceeds from plantoids are donated such that each plantoid consumes CO2 at a rate 100x higher than real plants</p>
                   <img src="./assets/flying-leafs.svg" alt="" />
               </div>
             </div>

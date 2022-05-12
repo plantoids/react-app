@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import gsap from 'gsap'
 import Card from './Card'
 
 const Hero = () => {
+
+  useEffect(() => {
+    gsap.to('.hero', {
+      translateY: 0,
+      opacity: 1,
+      duration: 1,
+      delay: .3,
+      ease: 'power2',
+    })
+
+    return () => {}
+  }, [])
+
   return (
     <section className="hero">
       <div className="wrapper">

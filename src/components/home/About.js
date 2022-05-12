@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState , useEffect} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js'
 import { Navigation } from 'swiper'
 import 'swiper/swiper.scss' // core Swiper
@@ -6,6 +6,7 @@ import 'swiper/modules/navigation/navigation.scss' // Navigation module
 import 'swiper/modules/pagination/pagination.scss' // Pagination module
 import Card from './Card'
 import { sliderImages } from 'src/helpers'
+import gsap from 'gsap'
 
 // cardData.map(card => {
 
@@ -17,6 +18,21 @@ import { sliderImages } from 'src/helpers'
 // })
 
 const About = () => {
+
+
+  useEffect(() => {
+    gsap.to('.about', {
+      translateY: 0,
+      opacity: 1,
+      duration: 1,
+      delay: .3,
+      ease: 'power2',
+
+    })
+
+    return () => {}
+  }, [])
+
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
 
@@ -53,10 +69,9 @@ const About = () => {
             />
           </div>
           <div className="about__content">
-            <h2>What is Plantoids NFT?</h2>
+            <h2>What are Plantoids?</h2>
             <p>
-              Your Plantoid is a dynamic NFT. Each Plantoid will have unique
-              traits and will grow with the passage of time.
+            Plantoids are dynamic NFTs: they are digital plants with unique traits that grow with the passage of time.
             </p>
             <div className="about__slider">
               <Swiper

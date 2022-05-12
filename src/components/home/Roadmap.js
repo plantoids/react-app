@@ -43,7 +43,6 @@ const DATA = [
   },
 ]
 
-console.log(DATA)
 const Roadmap = () => {
   return (
     <div className="roadmap">
@@ -57,25 +56,24 @@ const Roadmap = () => {
               slidesPerView={1.1}
               centeredSlides={true}
               className="roadmap__slider"
+              initialSlide={1}
               breakpoints={{
                 // when window width is >= 640px
                 980: {
                   centeredSlides: false,
                   slidesPerView: 3,
-                  
                 },
                 640: {
                   centeredSlides: false,
                   slidesPerView: 2,
-                  
                 },
                 // when window width is >= 768px
               }}
             >
               {DATA.map((item, index) => {
                 return (
-                  <SwiperSlide>
-                    <div key={index} className="roadmap__card">
+                  <SwiperSlide key={index}>
+                    <div className="roadmap__card">
                       <h1>{item.heading}</h1>
 
                       <div className="roadmap__card__item">

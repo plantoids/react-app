@@ -10,26 +10,64 @@ import Roadmap from './Roadmap'
 import Faq from './Faq'
 import Plantoids from './Plantoids'
 import Footer from '../footer'
-
+import Header from '../header'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export const HomePage = () => {
   const darkSectionRef = useRef()
+  const scroll = useRef()
+  const pinSection = useRef()
 
   useEffect(() => {
-    
     // if (typeof window !== `undefined`) {
     //   gsap.registerPlugin(ScrollTrigger)
     //   gsap.core.globals('ScrollTrigger', ScrollTrigger)
     // }
+
+
+    const fadeOutTl = gsap.timeline({ paused: true })
+
+    fadeOutTl.to(pinSection.current, {
+      opacity: 0,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.pin-section',
+        start: 'bottom bottom',
+        end: 'bottom 10%',
+        
+        scrub: true,
+      },
+    })
 
     ScrollTrigger.create({
       trigger: '.pin-section',
       start: 'bottom bottom',
       endTrigger: darkSectionRef.current,
       pin: true,
+      scrub: true,
       pinSpacing: false,
+     
+    })
+
+    ScrollTrigger.create({
+      trigger: darkSectionRef.current,
+      start: 'top +5%',
+      onEnter: () => {
+        scroll.current.classList.add('scroll-active')
+        if (scroll.current.classList.contains('scroll-active')) {
+          // document.body.style.overflow = "hidden";
+
+          setTimeout(() => {
+            darkSectionRef.current.focus()
+          }, 0);
+         
+        }
+      },
+      onLeaveBack: () => {
+        scroll.current.classList.remove('scroll-active')
+        // document.body.style.overflow = "auto";
+      },
     })
 
     return () => {
@@ -38,21 +76,27 @@ export const HomePage = () => {
   }, [])
 
   return (
-    <main className="home">
-      <Hero />
-      <div className="pin-section">
-        <About />
-      </div>
-      <div className="dark-section" ref={darkSectionRef}>
-        <Benefits />
-        <Roadmap />
-        <Faq/>
-        <Plantoids/>
-        <Footer/>
-      </div>
+    <>
+      <Header />
 
-      {/* <WalletMultiButton /> */}
-      {/* <WalletDisconnectButton /> */}
-    </main>
+      <main className="home">
+        <div className="pin-section" ref={pinSection}>
+          <Hero />
+          <About />
+        </div>
+        <div className="dark-section" ref={darkSectionRef} tabIndex="-1">
+          <div className="scroll" ref={scroll} >
+            <Benefits />
+            <Roadmap />
+            <Faq />
+            <Plantoids />
+            <Footer />
+          </div>
+        </div>
+
+        {/* <WalletMultiButton /> */}
+        {/* <WalletDisconnectButton /> */}
+      </main>
+    </>
   )
 }

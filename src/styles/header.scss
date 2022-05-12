@@ -1,5 +1,9 @@
 .header {
     padding-top: 50px;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    will-change: transform, opacity;
   
     &__logo {
       width: 136px;
@@ -20,13 +24,29 @@
       display: flex;
       align-items: center;
 
-      @media (max-width: 480px) {
-        display: none;
+
+      button {
+        @media (max-width: 480px) {
+          display: none;
+        }
       }
+
+
   
       a {
+        display: flex;
+        align-items: center;
         margin-right: 16px;
         @extend %description-18-medium;
+
+        @media (max-width: 480px) {
+          margin-right: 0px;
+        }
+
+        p {
+          border-bottom: 2px solid rgba(0,0,0,0.16);
+          padding-bottom: 2px;
+        }
       }
     }
   }

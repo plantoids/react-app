@@ -1,9 +1,8 @@
-
-$base-dark: #1B1C1D;
-$dark-grey: #605E5A;
-$base-green: #67CE67;
-$aux-orange: #EEB335;
-$base-grey: #F9F9F9;
+$base-dark: #1b1c1d;
+$dark-grey: #605e5a;
+$base-green: #67ce67;
+$aux-orange: #eeb335;
+$base-grey: #f9f9f9;
 $white: #fff;
 
 *,
@@ -15,8 +14,6 @@ $white: #fff;
 html {
   box-sizing: border-box;
 }
-
-
 
 body {
   margin: 0;
@@ -34,19 +31,43 @@ body {
   }
 } */
 
-
 sub {
   font-size: 70%;
 }
 
 .wrapper {
-	width: 1180px;
-    max-width: 90%;
-    margin: 0 auto;
+  width: 1180px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .hide-mob {
-  @media(max-width: 640px) {
+  @media (max-width: 640px) {
     display: none;
   }
+}
+
+a {
+  svg {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: $base-green !important;
+
+    svg path {
+      fill: $base-green;
+    }
+
+    p {
+      border-bottom: 2px solid $base-green !important;
+    }
+
+
+  }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
 }
