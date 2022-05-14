@@ -5,6 +5,8 @@ import moment from 'moment'
 import * as anchor from '@project-serum/anchor'
 import 'src/components/home/plant/PlantCard.css'
 
+const DEFAULT_IMAGE_URL = './assets/nft-placeholder.jpg'
+
 interface PlantCardProps {
   token: NftTokenAccount
 }
@@ -26,23 +28,6 @@ interface NftTokenMetadata {
     creators: any[]
   }
   mint: string //"GMzzLqHCXyED22VdEzrabi4uWcMYEGG7WGR5CoswW2KP"
-}
-
-const enum TRAIT_TYPE {
-  birthday,
-  randomSeed,
-  generation,
-  initialStemWidth,
-  initialStemLength,
-  flower,
-  baseFlowerDimension,
-  leaf,
-  baseLeafDimension,
-  pot,
-  potDimension,
-  growthRate,
-  sunTolerance,
-  rainTolerance,
 }
 
 type NftTokenMetadataAttributes = {
@@ -107,10 +92,16 @@ const PlantCard = ({ token }: PlantCardProps) => {
           </h4>
         </span>
         <span className="action">
-          <a href="googe.com">Go!</a>
+          <a href="googe.com">
+            <img src="assets/view-button.svg" alt="link" />
+          </a>
         </span>
       </header>
-      <img className="image" src={metadata?.image} alt="Plantoid" />
+      <img
+        className="image"
+        src={metadata?.image || DEFAULT_IMAGE_URL}
+        alt="Plantoid"
+      />
       <div className="stats">
         <div className="stat">
           {co2captured !== undefined ? (

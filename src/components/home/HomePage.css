@@ -1,14 +1,27 @@
 .home-page-container {
-  align-items: center;
   display: flex;
   flex-flow: column;
 }
 
-.home-page-container h1 {
-  font-size: 72px;
+.home-page-container .title {
+  margin-left: 24px;
+  padding-left: 4px;
+}
+
+.home-page-container .title h1 {
+  margin: 0;
+  font-size: 32px;
   font-weight: 400;
-  margin-top: 70px;
-  text-align: center;
+}
+
+.home-page-container .title p {
+  margin: 0;
+  color: #1b1c1d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 20px;
+  opacity: 0.46;
 }
 
 .home-page-container header.navbar {
@@ -31,6 +44,7 @@
   display: inline-flex;
   grid-area: connect;
   justify-content: flex-end;
+  margin-right: 24px;
 }
 
 .home-page-container header.navbar a {
@@ -41,4 +55,12 @@
 
 .home-page-container header.navbar img {
   height: 24px;
+}
+
+.home-page-container ul {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }

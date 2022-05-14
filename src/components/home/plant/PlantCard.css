@@ -1,11 +1,12 @@
 .home-page-container .plant-card-container {
-  background-color: #ffffff;
   align-items: stretch;
+  background-color: #ffffff;
   border-radius: 32px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 24px;
   padding: 24px;
   width: 388px;
 }

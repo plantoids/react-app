@@ -1,8 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import {
-  WalletDisconnectButton,
-  WalletMultiButton,
-} from '@solana/wallet-adapter-react-ui'
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { useWallet } from '@solana/wallet-adapter-react'
 import { useWalletNfts, NftTokenAccount } from '@nfteyez/sol-rayz-react'
 
@@ -45,26 +42,24 @@ const HomePage = () => {
         </span>
         <span className="connect">
           <WalletMultiButton />
-          {/* {publicKey ? <WalletD/isconnectButton /> : <WalletMultiButton />} */}
         </span>
       </header>
-      <p>I am the home page :D:D:D:D</p>
-      <hr />
+      <div className="title">
+        <h1>Your Plantoids</h1>
+        <p>See and manage all your Plantoids</p>
+      </div>
       {isLoading && <div>Loading...</div>}
       {nfts && (
-        <div>
-          <h4>Wallet have {filteredTokens?.length} tokens</h4>
-          <ul>
-            {filteredTokens.map((token: any, i: number) => {
-              console.log(token.mint, i)
-              return token ? (
-                <PlantCard key={token.mint} token={token} />
-              ) : (
-                <li key={i}>Loading...</li>
-              )
-            })}
-          </ul>
-        </div>
+        <ul>
+          {filteredTokens.map((token: any, i: number) => {
+            console.log(token.mint, i)
+            return token ? (
+              <PlantCard key={token.mint} token={token} />
+            ) : (
+              <li key={i}>Loading...</li>
+            )
+          })}
+        </ul>
       )}
     </div>
   )

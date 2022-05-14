@@ -2,6 +2,15 @@
   align-items: center;
   display: flex;
   flex-flow: column;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media only screen and (min-width: 1224px) {
+  .mint-page-container {
+    padding-left: 240px;
+    padding-right: 240px;
+  }
 }
 
 .mint-page-container h1 {

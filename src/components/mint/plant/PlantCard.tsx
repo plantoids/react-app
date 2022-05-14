@@ -3,7 +3,7 @@ import React from 'react'
 import CandyMachine from 'src/components/mint/candymachine/App'
 import 'src/components/mint/plant/PlantCard.css'
 
-const IMAGE_URL = './assets/nft-placeholder.jpg'
+const DEFAULT_IMAGE_URL = './assets/nft-placeholder.jpg'
 
 interface PlantCardProps {
   co2captured?: number
@@ -21,7 +21,7 @@ const PlantCard = (props: PlantCardProps) => {
 
   return (
     <div className="plant-card-container">
-      <img className="image" src={IMAGE_URL} alt="Plantoid" />
+      <img className="image" src={DEFAULT_IMAGE_URL} alt="Plantoid" />
       <div className="stats">
         <div className="stat">
           {co2captured !== undefined ? (
