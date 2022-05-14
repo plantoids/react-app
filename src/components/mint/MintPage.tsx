@@ -1,12 +1,9 @@
 import React from 'react'
 
-import CandyMachine from 'src/components/mint/candymachine/App'
 import PlantCard from 'src/components/mint/plant/PlantCard'
 import 'src/components/mint/MintPage.css'
 
 const MintPage = () => {
-  const mintButton = <CandyMachine />
-
   return (
     <div className="mint-page-container">
       <header>
@@ -34,7 +31,7 @@ const MintPage = () => {
         </span>
       </header>
       <h1>Mint your Plantoid</h1>
-      <PlantCard actions={mintButton} />
+      <PlantCard />
     </div>
   )
 }

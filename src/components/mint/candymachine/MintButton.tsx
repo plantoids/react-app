@@ -33,7 +33,7 @@ export const MintButton = ({
     if (candyMachine?.state.isSoldOut) {
       return 'SOLD OUT'
     } else if (isMinting) {
-      return 'Minting...'
+      return 'Minting'
     }
 
     return 'Mint a Plantoid'
