@@ -53,10 +53,9 @@ const About = () => {
       <div className="wrapper">
         <hr />
         <div className="mobile-heading">
-          <h2>What is Plantoids NFT?</h2>
+          <h2>What are Plantoids?</h2>
           <p>
-            Your Plantoid is a dynamic NFT. Each Plantoid will have unique
-            traits and will grow with the passage of time.
+            Plantoids are dynamic NFTs: they are digital plants with unique traits that grow with the passage of time.
           </p>
         </div>
         <div className="about__inner">
@@ -101,28 +100,28 @@ const About = () => {
                   <div className="slide-card">
                     <img src="./assets/leaf-2.svg" alt="" />
                     <h3>Growth function</h3>
-                    <p>Your Plantoid grows with the passage of time</p>
+                    <p>Your Plantoid will be growing everyday</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
                     <img src="./assets/leaf-3.svg" alt="" />
-                    <h3>8 Different leaf types</h3>
-                    <p>Your Plantoid grows with the passage of time</p>
+                    <h3>5 Different leaf types</h3>
+                    <p>Different and unique leaf styles</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
                     <img src="./assets/honey.svg" alt="" />
-                    <h3>10 Different pots</h3>
-                    <p>Your Plantoid grows with the passage of time</p>
+                    <h3>5 Different pots</h3>
+                    <p>Exclusive diamond pots for Plantoids Beta Generation</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
                     <img src="./assets/leaf-3.svg" alt="" />
-                    <h3>12 Different pots</h3>
-                    <p>Your Plantoid grows with the passage of time</p>
+                    <h3>Weather feature</h3>
+                    <p>Learn more about this feature in our Whitepaper</p>
                   </div>
                 </SwiperSlide>
 

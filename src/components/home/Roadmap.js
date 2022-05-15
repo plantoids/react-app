@@ -6,7 +6,7 @@ import 'swiper/modules/pagination/pagination.scss' // Pagination module
 
 const DATA = [
   {
-    heading: 'Q2 2022',
+    heading: 'Q1 2022',
     checkedText: [
       'Plantoids Alpha Version',
       'Whitepaper',
@@ -17,28 +17,31 @@ const DATA = [
     text: [],
   },
   {
-    heading: 'Q3 2022',
+    heading: 'Q2 2022',
 
-    checkedText: ['Whitelist acceptance'],
+    checkedText: ['New website release','Whitelist acceptance'],
 
     text: [
-      'OG Generation reveal',
-      'Plantoids Leadership Board',
-      'OG Whitelist Mint',
-      'New Landing page release',
+      'Plantoids Beta reveal',
+      'Plantoids Beta whitelist acceptance starts',
+      'Plantoids Beta minting date',
+      'Whitepaper 2.0',
+      'Plantoids DApp (NFT Personal Area)'
     ],
   },
   {
-    heading: 'Q4 2022',
+    heading: 'Q3 Q4 2022',
 
     checkedText: [],
 
     text: [
-      'Marketplace',
+      'OG Generation reveal',
+      'OG Generation minting date',
       'Plantoids Leadership Board',
-      'New Partner announcement',
+      'New Partners announcement',
       'Sustainable Plantoids merch drop',
       'Community events and WL giveaways for holders',
+      'A lot more to be announced...',
     ],
   },
 ]
