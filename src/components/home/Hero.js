@@ -8,9 +8,9 @@ const Hero = () => {
     gsap.to('.hero', {
       translateY: 0,
       opacity: 1,
-      duration: 1,
+      duration: 1.2,
       delay: .3,
-      ease: 'power2',
+      ease: 'power2.out',
     })
 
     return () => {}

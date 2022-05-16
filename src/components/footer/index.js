@@ -9,6 +9,9 @@ const Footer = () => {
             <img src="./assets/logo-footer.svg" alt="plantoids logo" />
           </div>
           <div>
+            <p>©2022 Green House Technology Institute, LLC.<br/>All rights reserved.</p>
+          </div>
+          <div>
             <a
               target="_blank"
               rel="noreferrer"

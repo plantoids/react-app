@@ -20,6 +20,8 @@ body {
   background-color: $base-grey;
   font-family: 'Circular Std', sans-serif;
   color: $base-dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* padding-left: 24px;
   padding-right: 24px; */
 }
@@ -71,3 +73,19 @@ a {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.pin-section {
+  will-change: opacity;
+  position: relative;
+  z-index: 1;
+}
+
+.coming-soon {
+    color: #EEB335;
+    background: rgba(238, 179, 53, 0.08);
+    padding: 8px 12px;
+    border-radius: 36px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+

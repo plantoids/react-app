@@ -7,7 +7,7 @@ const Benefits = () => {
         <div className="benefits__inner">
           <div className="benefits__title">
             <p>A CLIMATE-FRIENDLY BLOCKCHAIN PROJECT</p>
-            <h2>By owning Plantoids, you are reducing CO2 emissions</h2>
+            <h2>By owning Plantoids, you are reducing CO<sub>2</sub> emissions</h2>
           </div>
           <div className="benefits__cards">
             <div className="benefits__cards__row">
@@ -15,7 +15,7 @@ const Benefits = () => {
                 <img src="./assets/tree-icon.svg" alt="" />
                 <h4>Environmental activities</h4>
                 <p>
-                  Funds from Plantoids are used to purchase CO2 credits from our
+                  Funds from Plantoids are used to purchase CO<sub>2</sub> credits from our
                   partners, who use these funds to grow real trees, develop
                   renewable energy projects, etc to reduce global emissions.
                 </p>
@@ -43,7 +43,7 @@ const Benefits = () => {
               <div className="benefit-card light-green-bg ">
                   <h5>GUARANTEED</h5>
                   <h2>100x</h2>
-                  <p>Most proceeds from plantoids are donated such that each plantoid consumes CO2 at a rate 100x higher than real plants</p>
+                  <p>Most proceeds from plantoids are donated such that each plantoid consumes CO<sub>2</sub> at a rate 100x higher than real plants</p>
                   <img src="./assets/flying-leafs.svg" alt="" />
               </div>
             </div>

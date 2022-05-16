@@ -48,7 +48,7 @@ const Plantoids = () => {
                 <img src="./assets/leaf.svg" alt="" />
               </span>
 
-              <h3>How does Plantoids removes CO2?</h3>
+              <h3>How does Plantoids removes CO<sub>2</sub>?</h3>
               <p>
                 We partner with a carbon removal company to capture a
                 significant multiple of a plant’s natural absorption rate.

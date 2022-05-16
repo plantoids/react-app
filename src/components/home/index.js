@@ -84,7 +84,7 @@ export const HomePage = () => {
           <Hero />
           <About />
         </div>
-        <div className="dark-section" ref={darkSectionRef} tabIndex="-1">
+        <div className="dark-section" ref={darkSectionRef} >
           <div className="scroll" ref={scroll} >
             <Benefits />
             <Roadmap />

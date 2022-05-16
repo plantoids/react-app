@@ -24,9 +24,9 @@ const About = () => {
     gsap.to('.about', {
       translateY: 0,
       opacity: 1,
-      duration: 1,
+      duration: 1.2,
       delay: .3,
-      ease: 'power2',
+      ease: 'power2.out',
 
     })
 
@@ -99,6 +99,7 @@ const About = () => {
               >
                 <SwiperSlide>
                   <div className="slide-card">
+                    <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/leaf-2.svg" alt="" />
                     <h3>Growth function</h3>
                     <p>Your Plantoid grows with the passage of time</p>
@@ -106,6 +107,7 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
+                  <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/leaf-3.svg" alt="" />
                     <h3>8 Different leaf types</h3>
                     <p>Your Plantoid grows with the passage of time</p>
@@ -113,6 +115,7 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
+                  <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/honey.svg" alt="" />
                     <h3>10 Different pots</h3>
                     <p>Your Plantoid grows with the passage of time</p>
@@ -120,6 +123,7 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
+                  <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/leaf-3.svg" alt="" />
                     <h3>12 Different pots</h3>
                     <p>Your Plantoid grows with the passage of time</p>
