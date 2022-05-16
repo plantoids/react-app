@@ -89,8 +89,8 @@
 
 .home-page-container .plant-card-container .stat .empty-stat {
   margin: 6px 0;
-  border: 6px solid rgba(27, 28, 29, 0.08);
-  border-radius: 6px;
+  border: 8px solid rgba(27, 28, 29, 0.08);
+  border-radius: 8px;
   width: 70%;
 }
 
@@ -98,15 +98,21 @@
   margin-right: 8px;
 }
 
-.home-page-container .plant-card-container .stat *:nth-child(1) {
-  display: inline-block;
+.home-page-container .plant-card-container .stat > span:nth-child(1) {
+  display: inline-flex;
   align-items: center;
   font-size: 18px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 18px;
+  height: 23px;
+  align-items: center;
 }
 
-.home-page-container .plant-card-container .stat *:nth-child(2) {
+.home-page-container .plant-card-container .stat > span img {
+  margin-right: 4px;
+}
+
+.home-page-container .plant-card-container .stat > span:nth-child(2) {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;

@@ -25,7 +25,9 @@ const PlantCard = (props: PlantCardProps) => {
       <div className="stats">
         <div className="stat">
           {co2captured !== undefined ? (
-            <span>🌿 {co2captured}kg/co₂</span>
+            <span>
+              <img src="assets/icons/leaf.svg" alt="leaf" /> {co2captured}kg/co₂
+            </span>
           ) : (
             emptyStat
           )}

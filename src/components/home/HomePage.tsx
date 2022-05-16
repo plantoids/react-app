@@ -6,7 +6,8 @@ import { useWalletNfts, NftTokenAccount } from '@nfteyez/sol-rayz-react'
 import * as anchor from '@project-serum/anchor'
 
 import 'src/components/home/HomePage.css'
-import PlantCard from 'src/components/home/plant/PlantCard'
+import PlantCard from 'src/components/home/PlantCard'
+import PlantDetails from 'src/components/home/PlantDetails'
 
 function verifyUpdateAuthority(test: string) {
   console.log(
@@ -19,13 +20,15 @@ function verifyUpdateAuthority(test: string) {
 
 const HomePage = () => {
   const { publicKey } = useWallet()
+  const [detailsToken, setDetailsToken] = useState<NftTokenAccount>()
   const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST!
   const connection = new anchor.web3.Connection(
     rpcHost ? rpcHost : anchor.web3.clusterApiUrl('devnet')
   )
 
+  const publicAddress = publicKey?.toString() || ''
   const { nfts, isLoading } = useWalletNfts({
-    publicAddress: publicKey?.toString() || '',
+    publicAddress,
     connection,
   })
 
@@ -33,6 +36,9 @@ const HomePage = () => {
     () => nfts.filter((nft: any) => verifyUpdateAuthority(nft.updateAuthority)),
     [nfts]
   )
+
+  const setDetailsView = (token: NftTokenAccount) => () =>
+    setDetailsToken(token)
 
   return (
     <div className="home-page-container">
@@ -48,18 +54,28 @@ const HomePage = () => {
         <h1>Your Plantoids</h1>
         <p>See and manage all your Plantoids</p>
       </div>
-      {isLoading && <div>Loading...</div>}
-      {nfts && (
-        <ul>
-          {filteredTokens.map((token: any, i: number) => {
-            console.log(token.mint, i)
-            return token ? (
-              <PlantCard key={token.mint} token={token} />
-            ) : (
-              <li key={i}>Loading...</li>
+      <ul className="list">
+        {isLoading && <div>Loading...</div>}
+        {filteredTokens &&
+          filteredTokens.map((token: any, i: number) => {
+            console.log('HomePage', 'filteredTokens.map', token)
+            return (
+              <PlantCard
+                key={token.mint}
+                token={token}
+                onInspect={setDetailsView(token)}
+              />
             )
           })}
-        </ul>
+      </ul>
+      {detailsToken && (
+        <div className="details">
+          <PlantDetails
+            key={detailsToken.mint}
+            token={detailsToken}
+            owner={publicAddress}
+          />
+        </div>
       )}
     </div>
   )

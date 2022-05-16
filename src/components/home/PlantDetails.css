@@ -1,0 +1,185 @@
+.home-page-container .plant-details-container {
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px 16px 16px 0;
+  padding: 24px;
+  width: 388px;
+}
+
+.home-page-container .plant-details-container header {
+  align-items: center;
+  align-self: stretch;
+  display: grid;
+  grid-template-areas: 'edition plant-name action';
+  grid-template-columns: max-content 1fr max-content;
+  height: 60px;
+}
+
+.home-page-container .plant-details-container header .edition {
+  display: inline-flex;
+  grid-area: edition;
+}
+
+.home-page-container .plant-details-container header .plant-name {
+  display: inline-flex;
+  grid-area: plant-name;
+}
+
+.home-page-container .plant-details-container header .plant-name h4 {
+  margin: 0 0 0 4px;
+}
+
+.home-page-container
+  .plant-details-container
+  header
+  .plant-name
+  h4
+  span:nth-child(1) {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.home-page-container
+  .plant-details-container
+  header
+  .plant-name
+  h4
+  span:nth-child(2) {
+  font-family: 'Space Mono', monospace, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.home-page-container .plant-details-container header .action {
+  display: inline-flex;
+  grid-area: action;
+}
+
+.home-page-container .plant-details-container .image {
+  border-radius: 32px;
+  width: 338px;
+  aspect-ratio: 0.86;
+  object-fit: cover;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.02),
+    0px 2px 24px rgba(51, 34, 51, 0.04), 0px 1px 4px rgba(50, 54, 46, 0.08);
+}
+
+.home-page-container .plant-details-container .stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.home-page-container .plant-details-container .stats .stat,
+.home-page-container .plant-details-container .stats .stat-light {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 16px 0 0;
+  padding: 16px;
+  line-height: 24px;
+}
+
+.home-page-container .plant-details-container .stats .stat-light {
+  background: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.home-page-container .plant-details-container .stats .stat .empty-stat,
+.home-page-container .plant-details-container .stats .stat-light .empty-stat {
+  margin: 6px 0;
+  border: 8px solid rgba(27, 28, 29, 0.08);
+  border-radius: 8px;
+  width: 70%;
+}
+
+.home-page-container .plant-details-container .stats .stat:nth-child(odd),
+.home-page-container
+  .plant-details-container
+  .stats
+  .stat-light:nth-child(odd) {
+  margin-right: 8px;
+}
+
+.home-page-container .plant-details-container .stats .stat > span:nth-child(1),
+.home-page-container
+  .plant-details-container
+  .stats
+  .stat-light
+  > span:nth-child(1) {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 23px;
+  align-items: center;
+}
+
+.home-page-container
+  .plant-details-container
+  .stats
+  .stat-light
+  > span:nth-child(1) {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20px;
+}
+
+.home-page-container .plant-details-container .stats .stat > span img,
+.home-page-container .plant-details-container .stats .stat-light > span img {
+  margin-right: 4px;
+}
+
+.home-page-container .plant-details-container .stats .stat > span:nth-child(2),
+.home-page-container
+  .plant-details-container
+  .stats
+  .stat-light
+  > span:nth-child(2) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+/* END OF .home-page-container .plant-details-container .stats .stat */
+
+.home-page-container .plant-details-container .owner {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  flex: 1;
+  margin: 16px 0 0;
+  padding: 16px;
+  line-height: 24px;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-page-container .plant-details-container .owner > :nth-child(odd) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  opacity: 0.4;
+  text-transform: uppercase;
+}
+
+.home-page-container .plant-details-container .owner > :nth-child(even) {
+  text-align: right;
+  font-family: 'Space Mono', monospace, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
