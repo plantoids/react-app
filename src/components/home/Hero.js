@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="wrapper">
         <div className="hero__inner">
           <div className="hero__info">
-            <h1>Mint a Plantoid</h1>
+            <h1>Mint a Plantoid,</h1>
             <h1>
               remove
               <span>
@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero__card">
-            <Card kg="50" age="3">
+            <Card kg="1.69" age="54">
               <div className="tba">
                 <p>Mint TBA</p>
               </div>
