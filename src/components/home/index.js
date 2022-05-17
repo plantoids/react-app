@@ -25,30 +25,31 @@ export const HomePage = () => {
     //   gsap.core.globals('ScrollTrigger', ScrollTrigger)
     // }
 
+    // console.log(window.innerWidth)
+    if (window.innerWidth > 980) {
+      const fadeOutTl = gsap.timeline({ paused: true })
 
-    const fadeOutTl = gsap.timeline({ paused: true })
+      fadeOutTl.to(pinSection.current, {
+        opacity: 0,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.pin-section',
+          start: 'bottom bottom',
+          end: 'bottom 10%',
 
-    fadeOutTl.to(pinSection.current, {
-      opacity: 0,
-      ease: 'none',
-      scrollTrigger: {
+          scrub: true,
+        },
+      })
+
+      ScrollTrigger.create({
         trigger: '.pin-section',
         start: 'bottom bottom',
-        end: 'bottom 10%',
-        
+        endTrigger: darkSectionRef.current,
+        pin: true,
         scrub: true,
-      },
-    })
-
-    ScrollTrigger.create({
-      trigger: '.pin-section',
-      start: 'bottom bottom',
-      endTrigger: darkSectionRef.current,
-      pin: true,
-      scrub: true,
-      pinSpacing: false,
-     
-    })
+        pinSpacing: false,
+      })
+    }
 
     ScrollTrigger.create({
       trigger: darkSectionRef.current,
@@ -60,8 +61,7 @@ export const HomePage = () => {
 
           setTimeout(() => {
             darkSectionRef.current.focus()
-          }, 0);
-         
+          }, 0)
         }
       },
       onLeaveBack: () => {
@@ -71,7 +71,7 @@ export const HomePage = () => {
     })
 
     return () => {
-      ScrollTrigger.killAll()
+      // ScrollTrigger.killAll()
     }
   }, [])
 
@@ -84,8 +84,8 @@ export const HomePage = () => {
           <Hero />
           <About />
         </div>
-        <div className="dark-section" ref={darkSectionRef} >
-          <div className="scroll" ref={scroll} >
+        <div className="dark-section" ref={darkSectionRef}>
+          <div className="scroll" ref={scroll}>
             <Benefits />
             <Roadmap />
             <Faq />
