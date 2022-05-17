@@ -24,7 +24,7 @@ const Card = ({ header, kg, age, children, activeImage }) => {
           </div>
           <figure>
             <img
-              src={activeImage ? activeImage : './assets/blured-img.png'}
+              src={activeImage ? activeImage : './assets/growing-plantoid-gif.gif'}
               alt=""
             />
           </figure>

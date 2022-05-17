@@ -24,8 +24,7 @@ const Benefits = () => {
                 <img src="./assets/hands.svg" alt="" />
                 <h4>Partnerships</h4>
                 <p>
-                  We partner with established leaders in the carbon capturing
-                  industry like Climeworks and Charm Industrial.
+                  We partner with established leaders in the carbon capturing industry like Climeworks, providing the cetificates of the CO2 captured by each Plantoid.
                 </p>
               </div>
             </div>

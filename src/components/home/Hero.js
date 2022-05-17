@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="wrapper">
         <div className="hero__inner">
           <div className="hero__info">
-            <h1>Mint a Plantoid</h1>
+            <h1>Mint a Plantoid,</h1>
             <h1>
               remove
               <span>
@@ -30,11 +30,10 @@ const Hero = () => {
               CO<sub>2</sub>
             </h1>
             <p>
-              Plantoids are digital collectible NFTs that help save the
-              environment.{' '}
+              Plantoids are digital collectible NFTs that captures CO₂ at a rate 100x higher than real plants.{' '}
             </p>
             <div className="hero__socials">
-              <h4>Be the first one to know</h4>
+              <h4>Join and get access to the Beta</h4>
               <div>
                 <a
                   target="_blank"
@@ -54,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero__card">
-            <Card kg="50" age="3">
+            <Card kg="1.69" age="54">
               <div className="tba">
                 <p>Mint TBA</p>
               </div>
