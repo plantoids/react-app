@@ -25,7 +25,7 @@ const Footer = () => {
                 rel="noreferrer"
                 href="https://twitter.com/PlantoidsNFT"
               >
-                <img src="./assets/Twitter logo blue.svg" alt="twitter" />
+                <img src="./assets/twitter-logo-blue.svg" alt="twitter" />
               </a>
               <a
                 target="_blank"
