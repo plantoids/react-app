@@ -80,7 +80,7 @@
   &__card {
     width: 380px;
     justify-self: flex-end;
-    transform: scale(0);
+    transform: translateY(-20%);
     opacity: 0;
 
     @media (max-width: 980px) {
