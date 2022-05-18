@@ -10,8 +10,10 @@ const Hero = () => {
       opacity: 1,
       duration: 1.2,
       delay: .3,
-      ease: 'power2.out',
+      ease: 'Power2.easeOut',
     })
+
+    gsap.to(".hero__card", {scale: 1, opacity: 1, duration: 1, ease: 'Power2.easeOut', }, 1)
 
     return () => {}
   }, [])
