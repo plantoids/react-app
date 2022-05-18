@@ -98,7 +98,6 @@ const About = () => {
               >
                 <SwiperSlide>
                   <div className="slide-card">
-                    <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/leaf-2.svg" alt="" />
                     <h3>Growth function</h3>
                     <p>Your Plantoid will be growing everyday</p>
@@ -106,7 +105,6 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
-                  <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/leaf-3.svg" alt="" />
                     <h3>5 Different leaf types</h3>
                     <p>Different and unique leaf styles</p>
@@ -114,7 +112,6 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
-                  <span className='coming-soon'>Coming soon</span>
                     <img src="./assets/honey.svg" alt="" />
                     <h3>5 Different pots</h3>
                     <p>Exclusive diamond pots for Plantoids Beta Generation</p>
