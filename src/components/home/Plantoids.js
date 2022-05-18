@@ -6,9 +6,9 @@ const Plantoids = () => {
       <div className="wrapper">
         <div className="plantoids__inner">
           <h2>About Plantoids</h2>
-          <p className="hide-mob">
+          <p>
             Plantoids is a Solana-based platform to facilitate everyone remove
-            the global CO2 emissions in exchange for dynamic NFTs in the shape
+          the global CO<sub>2</sub> emissions in exchange for dynamic NFTs in the shape
             of digital plants
           </p>
           <div className="plantoids__cards">
@@ -25,7 +25,7 @@ const Plantoids = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.plantoids.io/"
+                href="https://docs.plantoids.io/plantoids/vision"
               >
                 <svg
                   width="12"
@@ -39,7 +39,7 @@ const Plantoids = () => {
                     fill="#747475"
                   />
                 </svg>
-                Learn more
+                Learn more about our mission
               </a>
             </div>
 
@@ -56,7 +56,7 @@ const Plantoids = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.plantoids.io/"
+                href="https://docs.plantoids.io/plantoids/going-carbon-negative"
               >
                 <svg
                   width="12"
@@ -70,7 +70,7 @@ const Plantoids = () => {
                     fill="#747475"
                   />
                 </svg>
-                Learn more
+                Read the Whitepaper
               </a>
             </div>
           </div>

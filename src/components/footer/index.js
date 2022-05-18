@@ -9,7 +9,7 @@ const Footer = () => {
             <img src="./assets/logo-footer.svg" alt="plantoids logo" />
           </div>
           <div>
-            <p>©2022 Green House Technology Institute, LLC.<br/>All rights reserved.</p>
+            <p>©2022 Green House Technological Institute, LLC.<br/>All rights reserved.</p>
           </div>
           <div>
             <a
@@ -25,7 +25,7 @@ const Footer = () => {
                 rel="noreferrer"
                 href="https://twitter.com/PlantoidsNFT"
               >
-                <img src="./assets/twitter-logo-blue.svg" alt="twitter" />
+                <img src="./assets/twitter.svg" alt="twitter" />
               </a>
               <a
                 target="_blank"

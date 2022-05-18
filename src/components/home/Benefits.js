@@ -24,7 +24,7 @@ const Benefits = () => {
                 <img src="./assets/hands.svg" alt="" />
                 <h4>Partnerships</h4>
                 <p>
-                  We partner with established leaders in the carbon capturing industry like Climeworks, providing the cetificates of the CO2 captured by each Plantoid.
+                  We partner with established leaders in the carbon capturing industry like Climeworks, providing the cetificates of the CO<sub>2</sub> captured by each Plantoid.
                 </p>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Benefits = () => {
               <div className="benefit-card light-green-bg ">
                   <h5>GUARANTEED</h5>
                   <h2>100x</h2>
-                  <p>Most proceeds from plantoids are donated such that each plantoid consumes CO<sub>2</sub> at a rate 100x higher than real plants</p>
+                  <p>Most proceeds from Plantoids are donated such that each plantoid consumes CO<sub>2</sub> at a rate 100x higher than real plants</p>
                   <img src="./assets/flying-leafs.svg" alt="" />
               </div>
             </div>
