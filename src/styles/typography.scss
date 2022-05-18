@@ -1,7 +1,5 @@
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-Black.woff2') format('woff2'),
-      url('../fonts/CircularStd-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -9,8 +7,6 @@
 
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-BlackItalic.woff2') format('woff2'),
-      url('../fonts/CircularStd-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -18,26 +14,20 @@
 
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
-      url('../fonts/CircularStd-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Circular Std Book';
-  src: url('../fonts/CircularStd-BookItalic.woff2') format('woff2'),
-      url('../fonts/CircularStd-BookItalic.woff') format('woff');
+  font-family: 'Circular Std';
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Circular Std Book';
-  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
-      url('../fonts/CircularStd-Book.woff') format('woff');
+  font-family: 'Circular Std';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,8 +35,6 @@
 
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-BoldItalic.woff2') format('woff2'),
-      url('../fonts/CircularStd-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -54,8 +42,6 @@
 
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-MediumItalic.woff2') format('woff2'),
-      url('../fonts/CircularStd-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -63,8 +49,6 @@
 
 @font-face {
   font-family: 'Circular Std';
-  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
-      url('../fonts/CircularStd-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -112,7 +96,7 @@
 %sub-title-24 {
   font-size: 24px;
   font-weight: 700;
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std';
 
 }
 
@@ -126,7 +110,7 @@
 %description-20-regular {
   font-size: 20px;
   font-weight: 400;
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std';
   @media(max-width: 980px) {
     font-size: 18px;
   }
@@ -140,19 +124,19 @@
 %description-18-book {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std';
 }
 
 %description-16-medium {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std';
 }
 
 %description-16-book {
   font-size: 16px;
   font-weight: 400;
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std';
 }
 
 %description-14-bold {
