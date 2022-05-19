@@ -48,15 +48,14 @@ const Plantoids = () => {
                 <img src="./assets/leaf.svg" alt="" />
               </span>
 
-              <h3>How does Plantoids removes CO<sub>2</sub>?</h3>
+              <h3>How do Plantoids work?</h3>
               <p>
-                We partner with a carbon removal company to capture a
-                significant multiple of a plant’s natural absorption rate.
+                We use a combination of unique genetics, external sources of true randomness, and L-systems to simulate the dynamic and unpredictable growth of plants. Checkout out our sourcepaper for more details.
               </p>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.plantoids.io/plantoids/going-carbon-negative"
+                href="https://docs.plantoids.io/plantoids-nft/what-were-building"
               >
                 <svg
                   width="12"
@@ -70,7 +69,7 @@ const Plantoids = () => {
                     fill="#747475"
                   />
                 </svg>
-                Read the Whitepaper
+                Read the Sourcepaper
               </a>
             </div>
           </div>

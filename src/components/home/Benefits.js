@@ -15,7 +15,7 @@ const Benefits = () => {
                 <img src="./assets/tree-icon.svg" alt="" />
                 <h4>Environmental activities</h4>
                 <p>
-                  Funds from Plantoids are used to purchase CO<sub>2</sub> credits from our
+                  Funds from Plantoids are used to purchase CO<sub>2</sub> capture and credits from our
                   partners, who use these funds to grow real trees, develop
                   renewable energy projects, etc to reduce global emissions.
                 </p>
