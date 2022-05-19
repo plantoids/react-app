@@ -24,8 +24,8 @@ const About = () => {
     gsap.to('.about', {
       translateY: 0,
       opacity: 1,
-      duration: 1.2,
-      delay: .3,
+      duration: 1,
+      delay: 1,
       ease: 'power2.out',
 
     })

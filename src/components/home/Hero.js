@@ -8,12 +8,12 @@ const Hero = () => {
     gsap.to('.hero', {
       translateY: 0,
       opacity: 1,
-      duration: 1.2,
-      delay: .3,
+      duration: 2,
+      delay: 0.5,
       ease: 'Power2.easeOut',
     })
 
-    gsap.to(".hero__card", { opacity: 1, y: 0, duration: 1.2, ease: 'Power2.easeOut', }, .4)
+    gsap.to(".hero__card", { opacity: 1, y: 0, duration: 2, ease: 'Power2.easeOut', }, 1)
 
     return () => {}
   }, [])
