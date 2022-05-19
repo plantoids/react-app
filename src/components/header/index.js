@@ -11,9 +11,9 @@ const Header = () => {
     gsap.to('.header', {
       translateY: 0,
       opacity: 1,
-      duration: 2,
+      duration: 1,
       delay: 0,
-      ease: 'Power2.easeOut',
+      ease: 'Power2.easeInOut',
     })
 
     return () => {}
