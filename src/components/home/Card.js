@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Card = ({ header, kg, age, children, activeImage }) => {
+
+  const [loaded, setLoaded] = useState(false)
+
+
   return (
     <>
       <div className="card">
@@ -24,8 +28,10 @@ const Card = ({ header, kg, age, children, activeImage }) => {
           </div>
           <figure>
             <img
+              style={loaded ? {} : { display: 'none' }}
               src={activeImage ? activeImage : './assets/growing-plantoid-gif.gif'}
               alt=""
+              onLoad={() => setLoaded(true)}
             />
           </figure>
         </div>
