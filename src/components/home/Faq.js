@@ -7,14 +7,14 @@ const data = [
       'Minting an NFT on the Solana Blockchain consumes as much energy as about 10 google searches. That\'s only 2 grams of carbon dioxide. A Plantoid consumes that much carbon dioxide in less than two hours!',
   },
   {
-    question: 'How do Plantoids remove CO2?',
+    question: 'How do Plantoids remove CO₂?',
     answer:
-      'Plantoids remove CO2 through carbon offest programs like Direct Air Carbon Capture provided by Climeworks and the purchasing of carbon credits.'
+      'Plantoids remove CO₂ through carbon offest programs like Direct Air Carbon Capture provided by Climeworks and the purchasing of carbon credits.'
   },
   {
     question: 'Wen mint?',
     answer:
-      'Follow our twitter and join our discord to stay up to date. More information still to come!',
+      'Follow us on Twitter and join our Discord to stay up to date. More information still to come!',
   },
 ]
 
