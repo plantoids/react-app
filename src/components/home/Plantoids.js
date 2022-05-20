@@ -76,8 +76,10 @@ const Plantoids = () => {
           <div className="partners">
             <p>Partners & Advisors</p>
             <div>
-              <img src="./assets/partners-logo-1.png" alt="" />
-              <img src="./assets/partners-logo-2.png" alt="" />
+            <a target="_blank" rel="noreferrer" href="https://desolate.space">
+              <img src="./assets/partners-logo-1.png" alt="" /> </a>
+            <a target="_blank" rel="noreferrer" href="https://crossmint.io">
+              <img src="./assets/partners-logo-2.png" alt="" /></a>
             </div>
           </div>
         </div>
