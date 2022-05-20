@@ -25,7 +25,7 @@ const About = () => {
       translateY: 0,
       opacity: 1,
       duration: 1,
-      delay: 1.2,
+      delay: 1.5,
       ease: 'Power1.easeInOut',
 
     })
