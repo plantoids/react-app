@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero__card">
-            <Card kg="1.69" age="54" activeImage={"./assets/growing-plantoid-gif1.mp4"}>
+            <Card kg="1.69" age="54" activeImage={"./assets/growing-plantoid-gif.webp"}>
               <div className="tba">
                 <p>Mint TBA</p>
               </div>
