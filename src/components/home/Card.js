@@ -35,6 +35,7 @@ const Card = ({ header, kg, age, children, activeImage }) => {
                 autoPlay="autoplay"
                 muted="muted"
                 loop="loop"
+                playsinline=""
               />
             ) : (
               <img
