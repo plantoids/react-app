@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import '../styles/app.scss'
 import { HomePage } from 'src/components/home'
-import MintPage from 'src/components/mint/MintPage'
+// import MintPage from 'src/components/mint/MintPage'
 import WalletProvider from 'src/components/wallet/Provider'
 
 
@@ -17,7 +17,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/mint" element={<MintPage />} />
+            {/* <Route path="/mint" element={<MintPage />} /> */}
           </Routes>
         </Router>
       </WalletProvider>
