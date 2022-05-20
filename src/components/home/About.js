@@ -104,7 +104,7 @@ const About = () => {
                   <div className="slide-card">
                     <img src="./assets/leaf-2.svg" alt="" />
                     <h3>Growth function</h3>
-                    <p>Your Plantoid will be growing everyday</p>
+                    <p>Your Plantoid will change everyday</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>

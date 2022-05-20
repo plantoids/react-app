@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import {
-  //   WalletDisconnectButton,
-  WalletMultiButton,
-} from '@solana/wallet-adapter-react-ui'
+//import {
+//  //   WalletDisconnectButton,
+//  WalletMultiButton,
+//} from '@solana/wallet-adapter-react-ui'
 
 import gsap from 'gsap'
 
@@ -46,7 +46,7 @@ const Header = () => {
               </svg>
               <p>Whitepaper</p>
             </a>
-            <WalletMultiButton />
+            {/* <WalletMultiButton /> */}
           </div>
         </div>
       </div>

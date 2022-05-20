@@ -7,8 +7,8 @@ const Plantoids = () => {
         <div className="plantoids__inner">
           <h2>About Plantoids</h2>
           <p>
-            Plantoids is a Solana-based platform to facilitate everyone remove
-          the global CO<sub>2</sub> emissions in exchange for dynamic NFTs in the shape
+            Plantoids is a Solana-based platform to facilitates everyone's contribution to the removal of
+           global CO<sub>2</sub> emissions through the care of dynamic NFTs in the shape
             of digital plants
           </p>
           <div className="plantoids__cards">
