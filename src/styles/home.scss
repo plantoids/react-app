@@ -1,6 +1,10 @@
 .home {
   padding-top: 70px;
   overflow-x: hidden;
+
+  @media (max-width: 640px) {
+  padding-top: 40px;
+  }
 }
 
 .hero {
@@ -80,7 +84,7 @@
   &__card {
     width: 380px;
     justify-self: flex-end;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
     opacity: 0;
 
     @media (max-width: 980px) {
