@@ -19,9 +19,10 @@ const DATA = [
   {
     heading: 'Q2 2022',
 
-    checkedText: ['New website release','Whitelist acceptance'],
+    checkedText: ['New website release',],
 
     text: [
+      'Whitelist acceptance',
       'Plantoids Beta reveal',
       'Plantoids Beta whitelist acceptance starts',
       'Plantoids Beta minting date',

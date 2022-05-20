@@ -45,7 +45,7 @@ const Card = ({ header, kg, age, children, activeImage }) => {
               {kg}kg/CO<sub>2</sub>
             </span>
           </h2>
-          <p>TOTAL CO2 REMOVEd</p>
+          <p>CO<sub>2</sub> REMOVEd</p>
         </div>
         <div className="card-stats__stat">
           <h2>{age} days old</h2>

@@ -50,7 +50,7 @@ const Plantoids = () => {
 
               <h3>How do Plantoids work?</h3>
               <p>
-                We use a combination of unique genetics, external sources of true randomness, and L-systems to simulate the dynamic and unpredictable growth of plants. Checkout out our sourcepaper for more details.
+                We use a combination of unique genetics, external sources of true randomness, and L-systems to simulate the dynamic and unpredictable growth of plants. Check out our Whitepaper for more details.
               </p>
               <a
                 target="_blank"
@@ -69,7 +69,7 @@ const Plantoids = () => {
                     fill="#747475"
                   />
                 </svg>
-                Read the Sourcepaper
+                Read the Whitepaper
               </a>
             </div>
           </div>
