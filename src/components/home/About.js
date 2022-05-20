@@ -109,27 +109,26 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
-                    <img src="./assets/leaf-3.svg" alt="" />
-                    <h3>5 Different leaf types</h3>
-                    <p>Different and unique leaf styles</p>
+                    <img src="./assets/dna-icon.png" alt="" />
+                    <h3>Unique genetics</h3>
+                    <p>With a combination of leaves, pots, flowers...</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
-                    <img src="./assets/honey.svg" alt="" />
-                    <h3>5 Different pots</h3>
-                    <p>Exclusive diamond pots for Plantoids Beta Generation</p>
+                    <img src="./assets/leaves-icon.svg" alt="" />
+                    <h3>Carbon removal</h3>
+                    <p>Each Plantoid will remove CO<sub>2</sub> from the atmosphere</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
                   <span className='coming-soon'>Coming soon</span>
-                    <img src="./assets/leaf-3.svg" alt="" />
-                    <h3>Weather feature</h3>
+                    <img src="./assets/weather-icon.svg" alt="" />
+                    <h3>Weather features</h3>
                     <p>Learn more about this feature in our Whitepaper</p>
                   </div>
                 </SwiperSlide>
-
                 <div className="slider-nav">
                   <div className="arrow arrow-prev" ref={navigationPrevRef}>
                     <img src="./assets/arrow.svg" alt="" />

@@ -15,7 +15,7 @@ const Benefits = () => {
                 <img src="./assets/tree-icon.svg" alt="" />
                 <h4>Environmental activities</h4>
                 <p>
-                  Funds from Plantoids are used to purchase CO<sub>2</sub> credits from our
+                  Funds from Plantoids are used to purchase CO<sub>2</sub> capture and credits from our
                   partners, who use these funds to grow real trees, develop
                   renewable energy projects, etc to reduce global emissions.
                 </p>
@@ -42,7 +42,7 @@ const Benefits = () => {
               <div className="benefit-card light-green-bg ">
                   <h5>GUARANTEED</h5>
                   <h2>100x</h2>
-                  <p>Most proceeds from Plantoids are donated such that each plantoid consumes CO<sub>2</sub> at a rate 100x higher than real plants</p>
+                  <p>Most proceeds from Plantoids are donated such that each Plantoid consumes CO<sub>2</sub> at a rate 100x higher than real plants</p>
                   <img src="./assets/flying-leafs.svg" alt="" />
               </div>
             </div>

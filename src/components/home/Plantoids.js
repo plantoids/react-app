@@ -48,15 +48,14 @@ const Plantoids = () => {
                 <img src="./assets/leaf.svg" alt="" />
               </span>
 
-              <h3>How does Plantoids removes CO<sub>2</sub>?</h3>
+              <h3>How do Plantoids work?</h3>
               <p>
-                We partner with a carbon removal company to capture a
-                significant multiple of a plant’s natural absorption rate.
+                We use a combination of unique genetics, external sources of true randomness, and L-systems to simulate the dynamic and unpredictable growth of plants. Check out our Whitepaper for more details.
               </p>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://docs.plantoids.io/plantoids/going-carbon-negative"
+                href="https://docs.plantoids.io/plantoids-nft/what-were-building"
               >
                 <svg
                   width="12"
@@ -77,8 +76,10 @@ const Plantoids = () => {
           <div className="partners">
             <p>Partners & Advisors</p>
             <div>
-              <img src="./assets/partners-logo-1.png" alt="" />
-              <img src="./assets/partners-logo-2.png" alt="" />
+            <a target="_blank" rel="noreferrer" href="https://desolate.space">
+              <img src="./assets/partners-logo-1.png" alt="" /> </a>
+            <a target="_blank" rel="noreferrer" href="https://crossmint.io">
+              <img src="./assets/partners-logo-2.png" alt="" /></a>
             </div>
           </div>
         </div>
