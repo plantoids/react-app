@@ -48,6 +48,9 @@ const About = () => {
     }
   }
 
+  //check if src is .mp4 or .png
+
+
   return (
     <section className="about">
       <div className="wrapper">
@@ -81,6 +84,7 @@ const About = () => {
                 onSlideChange={(swiper) => {
                   disableArrow(swiper)
                   setActilveSlide(swiper.realIndex)
+
                 }}
                 // onSwiper={(swiper) =>  console.log(swiper)}
                 className="cards-slider"

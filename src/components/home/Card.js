@@ -1,8 +1,5 @@
-import React, {useState} from 'react'
-
+import React from 'react'
 const Card = ({ header, kg, age, children, activeImage }) => {
-
-  const [loaded, setLoaded] = useState(false)
 
 
   return (
@@ -27,12 +24,28 @@ const Card = ({ header, kg, age, children, activeImage }) => {
             <p>UNREVEALED PLANTOID</p>
           </div>
           <figure>
-            <img
-              style={loaded ? {} : { display: 'none' }}
-              src={activeImage ? activeImage : './assets/growing-plantoid-gif.gif'}
-              alt=""
-              onLoad={() => setLoaded(true)}
-            />
+            {(activeImage || '').indexOf('mp4') > -1 ? (
+              <video
+                src={
+                  activeImage
+                    ? activeImage
+                    : './assets/growing-plantoid-gif1.mp4'
+                }
+                alt=""
+                autoPlay="autoplay"
+                muted="muted"
+                loop="loop"
+              />
+            ) : (
+              <img
+                src={
+                  activeImage
+                    ? activeImage
+                    : './assets/growing-plantoid-gif.gif'
+                }
+                alt=""
+              />
+            )}
           </figure>
         </div>
       </div>
