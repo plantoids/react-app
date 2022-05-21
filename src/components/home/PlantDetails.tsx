@@ -121,23 +121,25 @@ const PlantDetails = (props: PlantDetailsProps) => {
       <div className="owner">
         <span>owner</span>
         <span>
-          {`${props.owner.slice(0, 5)}...${props.owner.slice(-6)}`}
-          <img src="assets/icons/wallet" alt="wallet" />
+          {`${props.owner.slice(0, 5)}...${props.owner.slice(-6)}`}&nbsp;
+          <img src="assets/icons/wallet.svg" alt="wallet" />
         </span>
         <span>signature</span>
         <span>
           <a href="/signature">
-            View in Solscan
-            <img src="assets/icon/link" alt="link" />
+            View in Solscan&nbsp;
+            <img src="assets/icons/arrow.svg" alt="link" />
           </a>
         </span>
       </div>
       <div className="actions">
-        <a href="/remove">Remove more CO2</a>
-        <button>
-          <img src="assets/view-button.svg" alt="link" />
-          Go to your Plantoid
-        </button>
+        <a className="remove-co2" href="/remove">
+          Remove more CO2
+        </a>
+        <a className="public-view">
+          <img src="assets/icons/arrow.svg" alt="link" />
+          <span>&nbsp;Go to your Plantoid</span>
+        </a>
       </div>
     </div>
   )
