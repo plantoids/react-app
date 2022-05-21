@@ -49,7 +49,7 @@ const PlantCard = (props: PlantCardProps) => {
     <div className="plant-card-container">
       <header>
         <span className="edition">
-          <img src="assets/edition/OG.svg" alt="OG" />
+          <img src="/assets/editions/OG_40.svg" alt="OG" />
         </span>
         <span className="plant-name">
           <h4>
@@ -62,7 +62,7 @@ const PlantCard = (props: PlantCardProps) => {
         </span>
         <span className="action">
           <a href="googe.com">
-            <img src="assets/view-button.svg" alt="link" />
+            <img src="/assets/view-button.svg" alt="link" />
           </a>
         </span>
       </header>
@@ -75,7 +75,8 @@ const PlantCard = (props: PlantCardProps) => {
         <div className="stat">
           {co2captured !== undefined ? (
             <span>
-              <img src="assets/icons/leaf.svg" alt="leaf" /> {co2captured}kg/co₂{' '}
+              <img src="/assets/icons/leaf.svg" alt="leaf" /> {co2captured}
+              kg/co₂{' '}
             </span>
           ) : (
             emptyStat

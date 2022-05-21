@@ -60,7 +60,7 @@ const PlantDetails = (props: PlantDetailsProps) => {
     <div className="plant-details-container">
       <header>
         <span className="edition">
-          <img src="assets/edition/OG.svg" alt="OG" />
+          <img src="/assets/editions/OG_40.svg" alt="OG" />
         </span>
         <span className="plant-name">
           <h4>
@@ -73,7 +73,7 @@ const PlantDetails = (props: PlantDetailsProps) => {
         </span>
         <span className="action">
           <a href="googe.com">
-            <img src="assets/view-button.svg" alt="link" />
+            <img src="/assets/view-button.svg" alt="link" />
           </a>
         </span>
       </header>
@@ -86,7 +86,8 @@ const PlantDetails = (props: PlantDetailsProps) => {
         <div className="stat">
           {co2captured !== undefined ? (
             <span>
-              <img src="assets/icons/leaf.svg" alt="leaf" /> {co2captured}kg/co₂{' '}
+              <img src="/assets/icons/leaf.svg" alt="leaf" /> {co2captured}
+              kg/co₂{' '}
             </span>
           ) : (
             emptyStat
@@ -122,13 +123,13 @@ const PlantDetails = (props: PlantDetailsProps) => {
         <span>owner</span>
         <span>
           {`${props.owner.slice(0, 5)}...${props.owner.slice(-6)}`}&nbsp;
-          <img src="assets/icons/wallet.svg" alt="wallet" />
+          <img src="/assets/icons/wallet.svg" alt="wallet" />
         </span>
         <span>signature</span>
         <span>
           <a href="/signature">
             View in Solscan&nbsp;
-            <img src="assets/icons/arrow.svg" alt="link" />
+            <img src="/assets/icons/arrow.svg" alt="link" />
           </a>
         </span>
       </div>
@@ -136,8 +137,8 @@ const PlantDetails = (props: PlantDetailsProps) => {
         <a className="remove-co2" href="/remove">
           Remove more CO2
         </a>
-        <a className="public-view">
-          <img src="assets/icons/arrow.svg" alt="link" />
+        <a className="public-view" href={`/plantoids/${props.token.mint}`}>
+          <img src="/assets/icons/arrow.svg" alt="link" />
           <span>&nbsp;Go to your Plantoid</span>
         </a>
       </div>

@@ -215,6 +215,8 @@
   padding: 14px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: initial;
 }
 
 .home-page-container .plant-details-container .actions a.public-view > * {

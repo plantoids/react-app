@@ -1,4 +1,4 @@
-.plant-card-container {
+.mint-page-container .plant-card-container {
   align-items: stretch;
   border-radius: 32px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   width: 388px;
 }
 
-.plant-card-container .image {
+.mint-page-container .plant-card-container .image {
   border-radius: 32px;
   width: 338px;
   aspect-ratio: 0.86;
@@ -18,14 +18,14 @@
     0px 2px 24px rgba(51, 34, 51, 0.04), 0px 1px 4px rgba(50, 54, 46, 0.08);
 }
 
-.plant-card-container .stats {
+.mint-page-container .plant-card-container .stats {
   display: flex;
   flex-direction: row;
   flex: 1;
   margin: 16px 0;
 }
 
-.plant-card-container .stat {
+.mint-page-container .plant-card-container .stat {
   background-color: #f9f9f9;
   border-radius: 16px;
   display: flex;
@@ -35,18 +35,18 @@
   line-height: 24px;
 }
 
-.plant-card-container .stat .empty-stat {
+.mint-page-container .plant-card-container .stat .empty-stat {
   margin: 6px 0;
   border: 6px solid rgba(27, 28, 29, 0.08);
   border-radius: 6px;
   width: 70%;
 }
 
-.plant-card-container .stat:nth-child(1) {
+.mint-page-container .plant-card-container .stat:nth-child(1) {
   margin-right: 8px;
 }
 
-.plant-card-container .stat *:nth-child(1) {
+.mint-page-container .plant-card-container .stat *:nth-child(1) {
   display: inline-block;
   align-items: center;
   font-size: 18px;
@@ -54,7 +54,7 @@
   line-height: 23px;
 }
 
-.plant-card-container .stat *:nth-child(2) {
+.mint-page-container .plant-card-container .stat *:nth-child(2) {
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
