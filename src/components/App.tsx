@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import 'src/components/App.css'
 import HomePage from 'src/components/home/HomePage'
 import MintPage from 'src/components/mint/MintPage'
+import PublicViewPage from 'src/components/publicview/PublicViewPage'
 import WalletProvider from 'src/provider/WalletProvider'
 
 // eslint-disable-next-line
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/" element={IndexPage} />
             <Route path="/me" element={<HomePage />} />
             <Route path="/mint" element={<MintPage />} />
+            <Route path="/plantoids/:mint" element={<PublicViewPage />} />
           </Routes>
         </Router>
       </WalletProvider>

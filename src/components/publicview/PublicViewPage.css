@@ -1,0 +1,47 @@
+.public-view-page-container {
+  display: grid;
+  grid-template-areas:
+    'navbar'
+    'plantcard'
+    'footer';
+  justify-content: center;
+}
+
+.public-view-page-container header.navbar {
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  background-color: #f9f9f9f9;
+  display: flex;
+  font-size: 18px;
+  grid-area: navbar;
+  padding-bottom: 12px;
+  padding-top: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.public-view-page-container header.navbar span.logo {
+  display: inline-flex;
+  grid-area: logo;
+  justify-content: center;
+}
+/* END OF .public-view-page-container header.navbar */
+
+.public-view-page-container .plant-card-container {
+  grid-area: plantcard;
+}
+/* END OF .public-view-page-container ul.list */
+
+.public-view-page-container .footer {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #00000066;
+}
+
+.public-view-page-container .footer .logo {
+  color: #000000ff;
+}
