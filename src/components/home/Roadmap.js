@@ -17,27 +17,25 @@ const DATA = [
     text: [],
   },
   {
-    heading: 'Q2 2022',
+    heading: 'Q2 Q3 2022',
 
-    checkedText: ['New website release',],
+    checkedText: ['New website release', 'Plantoids OG reveal', 'Plantoids OG whitelist acceptance starts',],
 
     text: [
-      'Whitelist acceptance',
-      'Plantoids Beta reveal',
-      'Plantoids Beta whitelist acceptance starts',
-      'Plantoids Beta minting date',
+      'Plantoids OG minting date',
       'Whitepaper 2.0',
-      'Plantoids DApp (NFT Personal Area)'
+      'Plantoids DApp (NFT Personal Area)',
+      'Calim tokenized carbon credits'
     ],
   },
   {
-    heading: 'Q3 Q4 2022',
+    heading: 'Q4 2022',
 
     checkedText: [],
 
     text: [
-      'OG Generation reveal',
-      'OG Generation minting date',
+      'First Generation reveal',
+      'First Generation minting date',
       'Plantoids Leadership Board',
       'New Partners announcement',
       'Sustainable Plantoids merch drop',
