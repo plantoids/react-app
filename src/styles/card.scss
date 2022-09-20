@@ -141,7 +141,7 @@
 }
 
 .tba {
-    color: $dark-grey;
+    color: $white;
   @extend %description-18-medium;
   margin-top: 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -150,4 +150,5 @@
   align-items: center;
   justify-content: center;
   border-radius: 16px;
+  background: $base-dark;
 }
