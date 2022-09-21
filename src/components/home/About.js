@@ -65,7 +65,7 @@ const About = () => {
           <div className="about__card">
             <Card
               header
-              kg="4.20"
+              kg="45.02"
               age="136"
               activeImage={sliderImages[actilveSlide]}
             />
