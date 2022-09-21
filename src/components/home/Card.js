@@ -20,9 +20,9 @@ const Card = ({ header, kg, age, children, activeImage }) => {
           </div>
         ) : null}
         <div className="card__body">
-          <div className="card__body__text">
+          {/* <div className="card__body__text">
             <p>UNREVEALED PLANTOID</p>
-          </div>
+          </div> */}
           <figure>
             {(activeImage || '').indexOf('mp4') > -1 ? (
               <video

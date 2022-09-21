@@ -65,7 +65,7 @@ const About = () => {
           <div className="about__card">
             <Card
               header
-              kg="4.20"
+              kg="45.02"
               age="136"
               activeImage={sliderImages[actilveSlide]}
             />
@@ -123,10 +123,10 @@ const About = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="slide-card">
-                  <span className='coming-soon'>Coming soon</span>
+                  {/* <span className='coming-soon'>Coming soon</span> */}
                     <img src="./assets/weather-icon.svg" alt="" />
                     <h3>Weather interactions</h3>
-                    <p>Learn more about this feature in our Whitepaper</p>
+                    <p>Parsed from blockchain data, impacting growth</p>
                   </div>
                 </SwiperSlide>
                 <div className="slider-nav">

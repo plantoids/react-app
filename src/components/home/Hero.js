@@ -32,7 +32,7 @@ const Hero = () => {
               CO<sub>2</sub>
             </h1>
             <p>
-              Plantoids are digital collectible NFTs that capture CO₂ at a rate 100x higher than real plants.{' '}
+              Plantoids are digital collectible NFTs that capture CO₂ at a rate 1000x higher than real plants.{' '}
             </p>
             <div className="hero__socials">
               <h4>Join and get access to the Beta</h4>
@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero__card">
-            <Card kg="1.69" age="54" activeImage={"./assets/growing-plantoid-gif1.mp4"}>
+            <Card kg="17.8" age="54" activeImage={"./assets/revealed-growing-plantoid-gif1.mp4"}>
               <div className="tba">
                 <p>Mint TBA</p>
               </div>
