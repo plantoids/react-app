@@ -56,9 +56,15 @@ const Hero = () => {
           </div>
           <div className="hero__card">
             <Card kg="17.8" age="54" activeImage={"./assets/revealed-growing-plantoid-gif1.mp4"}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://mint.plantoids.io"
+            >
               <div className="tba">
-                <p>Mint TBA</p>
+                <p>Mint</p>
               </div>
+            </a>
             </Card>
           </div>
         </div>
