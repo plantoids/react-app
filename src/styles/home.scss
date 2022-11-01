@@ -856,6 +856,17 @@
 
 .swiper-slide:nth-child(2) {
   .roadmap__card {
+    h1 {
+      opacity: 0.3;
+    }
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.4;
+  }
+}
+
+.swiper-slide:nth-child(3) {
+  .roadmap__card {
     &:after {
       content: "We're here";
       display: block;

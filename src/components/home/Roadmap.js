@@ -21,19 +21,16 @@ const DATA = [
 
     checkedText: ['New website release', 'Plantoids OG reveal', 'Plantoids OG whitelist acceptance starts', 'Plantoids OG minting date', 'Plantoids DApp (NFT Personal Area)',],
 
-    text: [
-      'Claim tokenized carbon credits',
-    ],
+    text: [],
   },
   {
     heading: 'Q4 2022',
 
-    checkedText: [],
+    checkedText: ['The Lab opens with Mutations', 'First 1000 Kg CO2 Captured'],
 
     text: [
       'Phase 2 minting date',
       'Plantoids Leadership Board',
-      'New Partners announcement',
       'Sustainable Plantoids merch drop',
       'Community events and WL giveaways for holders',
       'A lot more to be announced...',
