@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Document,Page } from 'react-pdf/dist/esm/entry.webpack';
+import { Document,Page,pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import pdf from './plantoids-detailed-roadmap_compressed.pdf';
 export const Pdf = () => {
+
+    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
