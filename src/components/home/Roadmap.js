@@ -3,37 +3,47 @@ import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js'
 import 'swiper/swiper.scss' // core Swiper
 import 'swiper/modules/navigation/navigation.scss' // Navigation module
 import 'swiper/modules/pagination/pagination.scss' // Pagination module
+import {Link } from 'react-router-dom'
 
 const DATA = [
   {
-    heading: 'Q1 2022',
-    checkedText: [
-      'Plantoids Alpha Version',
-      'Whitepaper',
-      'Twitter',
-      'Discord (invite-only)',
-      'Website release',
-    ],
-    text: [],
-  },
-  {
-    heading: 'Q2 Q3 2022',
-
-    checkedText: ['New website release', 'Plantoids OG reveal', 'Plantoids OG whitelist acceptance starts', 'Plantoids OG minting date', 'Plantoids DApp (NFT Personal Area)',],
-
-    text: [],
-  },
-  {
     heading: 'Q4 2022',
+    checkedText: [
+      'Plantoids Story Development',
+      'Mutagen Free Mint',
+    ],
+    text: [
+      'Plantoids Phase 2 OG Mint',
+      'The Lab Developments',
+      'Imagine Your Plantoid, 1/1 Art with artists in the space',
+      'First Merch designs and ideas',
+    ],
+  },
+  {
+    heading: 'Q1 2023',
 
-    checkedText: ['The Lab opens with Mutations', 'First 1000 Kg CO2 Captured'],
+    checkedText: [],
 
     text: [
-      'Phase 2 minting date',
-      'Plantoids Leadership Board',
-      'Sustainable Plantoids merch drop',
-      'Community events and WL giveaways for holders',
-      'A lot more to be announced...',
+      'Further Lab Developments:',
+      'More Mutation-only traits',
+      'Watering Feature',
+      'Fertilizing',
+      'Token Integration',
+      'Sustainable Merch Drop'
+    ],
+  },
+  {
+    heading: 'Q2 2023',
+
+    checkedText: [],
+
+    text: [
+      'Plantoids Traits Marketplace: \n 1/1 Pots and Backgrounds',
+      'Integrations Development',
+      'Scientist PFP story development',
+      'Scientist PFP artwork',
+      '100,000 Kg CO2 removed Milestone',
     ],
   },
 ]
@@ -43,7 +53,9 @@ const Roadmap = () => {
     <div className="roadmap">
       <div className="wrapper">
         <div className="roadmap__inner">
-          <h2>Roadmap</h2>
+          <h2>
+            <Link to="/Roadmap" target="_blank">Roadmap</Link>
+          </h2>
 
           <div className="roadmap__cards">
             <Swiper
@@ -51,7 +63,7 @@ const Roadmap = () => {
               slidesPerView={1.1}
               centeredSlides={true}
               className="roadmap__slider"
-              initialSlide={1}
+              initialSlide={0}
               breakpoints={{
                 // when window width is >= 640px
                 980: {
