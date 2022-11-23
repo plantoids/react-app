@@ -1,61 +1,13 @@
-import React, { useState } from 'react';
-import { Document,Page,pdfjs } from 'react-pdf/dist/esm/entry.webpack';
-import pdf from './plantoids-detailed-roadmap_compressed.pdf';
+import React from 'react';
 export const Pdf = () => {
 
-    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-        setPageNumber(1);
-    }
-
-    function changePage(offset) {
-        setPageNumber(prevPageNumber => prevPageNumber + offset);
-    }
-
-    function previousPage() {
-        changePage(-1);
-    }
-
-    function nextPage() {
-        changePage(1);
-    }
 
 
     return (
         <>
-        <Document
-            file={pdf}
-            onLoadSuccess={onDocumentLoadSuccess}
-            className = "pdf"
-        >
-            <Page pageNumber={pageNumber} />
-        </Document>
-        <div className='Pdf-page'>
-            <p>
-            Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
-            </p>
-        </div>
-        <div className='Pdf-buttons'>
-            <button
-            className='Pdf-button'
-            type="button"
-            disabled={pageNumber <= 1}
-            onClick={previousPage}
-            >
-            Previous
-            </button>
-            <button
-            className='Pdf-button'
-            type="button"
-            disabled={pageNumber >= numPages}
-            onClick={nextPage}
-            >
-            Next
-            </button>
+        <div className='pdfWrapper'>
+            <iframe title= "Plantoids extended Roadmap" src="https://drive.google.com/file/d/1SLS393_7WCI6qfpmgfk_tuu2cTcZJm2S/preview" allow="autoplay" ></iframe>
         </div>
         </>
     );
